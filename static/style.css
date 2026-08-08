@@ -85,6 +85,7 @@ body {
     letter-spacing: 3px;
     color: #ffffff;
     text-decoration: none;
+    font-variant-numeric: lining-nums;
 }
 
 .nav-links {
@@ -345,6 +346,7 @@ body {
     color: var(--text-muted);
     display: block;
     margin-bottom: 8px;
+    font-variant-numeric: lining-nums;
 }
 
 .stack-name {
@@ -464,6 +466,7 @@ body {
     font-weight: 600;
     color: #fff;
     margin-bottom: 8px;
+    font-variant-numeric: lining-nums;
 }
 
 .time-title {
