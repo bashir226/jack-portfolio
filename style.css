@@ -798,3 +798,106 @@ body {
     white-space: pre;
     text-shadow: 0 0 10px rgba(169, 183, 198, 0.1);
 }
+
+/* =============================================================================
+   Responsive Design (Mobile & Tablet Adaptation)
+   ============================================================================= */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 5%;
+    }
+    
+    .hero-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .hero-title {
+        font-size: 64px;
+    }
+    
+    .nav-bar {
+        padding: 20px 5%;
+    }
+    
+    .line-overlay {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .line-overlay {
+        display: none; /* Hide background lines on small screens for readability */
+    }
+    
+    .nav-links {
+        display: none; /* Clean approach: hide nav links, keep logo and github button */
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-right {
+        order: -1; /* Display the cool charred wood image above the text on mobile */
+    }
+    
+    .image-mask {
+        height: 300px;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .bio-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .code-viewer-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .code-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
+        gap: 8px;
+    }
+    
+    .tab-btn {
+        padding: 10px 16px;
+        white-space: nowrap;
+        font-size: 11px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .footer-title {
+        font-size: 36px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
