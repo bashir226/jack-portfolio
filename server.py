@@ -2,7 +2,7 @@ import os
 import requests
 from flask import Flask, request, jsonify, send_from_directory
 
-app = Flask(__name__, static_folder="", static_url_path="")
+app = Flask(__name__, static_folder="static", static_url_path="")
 
 # Load config from environment or fallback
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "7161726715:AAF6_some_dummy_token")
@@ -10,7 +10,7 @@ CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "123456789")
 
 @app.route("/")
 def home():
-    return send_from_directory("", "index.html")
+    return app.send_static_file("index.html")
 
 @app.route("/api/contact", methods=["POST"])
 def contact():
